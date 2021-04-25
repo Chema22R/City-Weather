@@ -1,6 +1,7 @@
 {
   "name": "city-weather",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "City Weather project",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --open",
@@ -9,7 +10,16 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Chema22R/city-weather.git"
+  },
+  "author": "Jose Maria Rivera Alonso (https://github.com/Chema22R)",
+  "license": "MIT",
+  "bugs": {
+      "url": "https://github.com/Chema22R/city-weather/issues"
+  },
+  "homepage": "https://github.com/Chema22R/city-weather#readme",
   "dependencies": {
     "@angular/animations": "~11.2.11",
     "@angular/common": "~11.2.11",
