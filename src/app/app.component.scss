@@ -1,0 +1,114 @@
+$rowSize: 3rem;
+$borderRad: .5rem;
+$imgSeparator: 1rem;
+
+.container {
+    display: block;
+
+    max-width: max-content;
+    min-width: min-content;
+
+    margin: 3rem auto;
+    padding: 3rem 2rem;
+
+    border-radius: 1rem;
+
+    background-color: #fff;
+
+    cursor: default;
+
+
+    table {
+        border-spacing: 0;
+        border-collapse: collapse;
+
+        text-align: left;
+
+        thead {
+            font-size: .8rem;
+
+            th {
+                height: $rowSize;
+                padding: 0 1.5rem;
+
+                &:first-of-type {
+                    padding-left: $rowSize + $imgSeparator;
+                    border-radius: $borderRad 0 0 $borderRad;
+                }
+
+                &:last-of-type {
+                    border-radius: 0 $borderRad $borderRad 0;
+                }
+            }    
+        }
+
+        tbody {
+            font-size: 1rem;
+
+            td {
+                height: $rowSize;
+
+                padding: .8rem 2rem;
+
+                &:first-of-type {
+                    padding-left: 0;
+                }
+
+                &:last-of-type {
+                    padding-right: 0;
+                }
+
+                &.inlineContent {
+                    display: flex;
+                    align-items: center;
+
+                    .weatherIcon {
+                        height: $rowSize;
+                        width: $rowSize;
+    
+                        margin-right: $imgSeparator;
+                        padding: .3rem;
+                        box-sizing: border-box;
+    
+                        border-radius: $borderRad;
+                    }
+                }
+
+                &.twoLinesContent {
+                    * {
+                        display: flex;
+                        height: 50%;
+
+                        align-items: center;
+                    }
+
+                    :last-child {
+                        font-size: .9rem;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            button {
+                padding: .5rem 2rem;
+
+                border: none;
+                border-radius: $borderRad;
+                outline:none;
+
+                color: #1bc5bd;
+                background-color: #c9f7f5;
+
+                cursor: pointer;
+
+                &:hover {
+                    filter: brightness(95%);
+                }
+            }
+        }
+    }
+}
