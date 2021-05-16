@@ -8,9 +8,9 @@
 
 **City WeatHer** is a very simple weather forecast app. It displays a list with all the cities in Spain. By clicking on a city, its main forecast information is displayed.
 
-The cities list is provided by [CountriesNow](https://openweathermap.org/) API.
+The cities list is provided by [CountriesNow](https://countriesnow.space/) API.
 
-The forecast data is provided by [OpenWeather](https://countriesnow.space/) API.
+The forecast data is provided by [OpenWeather](https://openweathermap.org/) API.
 
 Check out a real example of the application from [here](https://city-weather.chema22r.com).
 
